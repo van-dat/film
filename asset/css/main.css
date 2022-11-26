@@ -1,0 +1,175 @@
+header {
+    background-color: #000;
+}
+main {
+    background-color: #212128;
+}
+.navbar-nav .nav-link {
+    color: #d0d0d0;
+    transition: all .5s ease;
+    font-weight: 400;
+}
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+	animation: flicker 1s ease-in-out infinite alternate;
+}
+.content-heading {
+    text-transform: uppercase;
+    padding: 10px 0;
+    font-size: 1rem;
+}
+.content-heading .h-text{
+    position: relative;
+    padding: 5px 0;
+    background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
+    background: linear-gradient(to right,#ff8a00,#ff2070);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font-weight: 700;
+}
+.content-heading .h-text::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    z-index: 100;
+    right: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid transparent;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right,#ff8a00,#ff2070);
+}
+.film:hover .img {
+    transform: scale(1.2);
+	transition: all .3s ease-in-out;
+
+}
+
+.film:hover a {
+    color: #fff;
+}
+.film:hover .episode {
+    background-image: linear-gradient(to right ,#01044a, #1bafdb);
+}
+.film a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    
+}
+.img {
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .7s ease;
+}
+.film-heading {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(6, 6, 6, 0.55) 30%, rgba(0, 0, 0, 0.92) 100%);
+    justify-content: center;
+    align-items: flex-end;
+}
+.f-heading {
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;    
+
+}
+.episode {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 2px 6px;
+    border-radius: 5px 2px 2px 2px;
+    background-image: linear-gradient(to right, #8b2cdf, #06024c);
+}
+.page {
+    width: 35%;
+    float: right;
+    text-align: right;
+    background-image: linear-gradient(to right, rgba(30, 30, 36, 0.5), rgba(255, 148, 179, 0.2));
+    border-radius: 20px;
+    padding: 2px 10px;
+    transition: all 1s ease;
+}
+.link-page {
+    color: #d0d0d0;
+    text-decoration: none;
+    
+}
+.page:hover {
+    background: #0e1215;
+    transition: .5s all;
+    
+}
+.page:hover .link-page {
+    color: #d0d0d0;
+}
+/* favourite */
+.bd::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    width: 100%;
+    border-bottom: 1px solid #1e2732!important;
+}
+.list-film .item-film:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.item-film {
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #1e1e24 0%, #0c0c0e 51%, #060808 50%);
+    transition: .8s;
+}
+.favourite-heading {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    padding-left: 10px;
+    padding-top: 10px  ;
+}
+.img-favourite {
+    -webkit-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .7s ease;
+}
+.item-film:hover {
+    background-position: right center;
+    transition: .5s;
+}
+.item-film:hover .img-favourite {
+    transform: scale(1.2);
+    transition: all .3s ease;
+}
+.item-film:hover .favourite-heading span {
+    background: -webkit-gradient(linear,left top,right top,from(#ff8a00),to(#da1b60));
+    background: -webkit-linear-gradient(45deg, #ff8a00, #ff2070 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    font-size: 600;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+}
+.footer-heading {
+    color: #d0d0d0;
+    font-size: 13px;
+}
